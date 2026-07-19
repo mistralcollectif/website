@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-archivo);
+
+  /* Brand Colors */
+  --color-cream: #FAF7F2;
+  --color-ink: #111111;
+  --color-mediterranee: #1B6FD1;
+  --color-garrigue: #2A8C4A;
+  --color-mistral: #FF5722;
+
+  /* Semantic Colors */
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-ink);
+
+  /* Typography Scale */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+  --font-size-6xl: 3.75rem;    /* 60px */
+  --font-size-7xl: 4.5rem;     /* 72px */
+  --font-size-8xl: 6rem;       /* 96px */
+  --font-size-hero: 8vw;       /* Responsive hero */
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+
+  /* Grid */
+  --grid-cols: 12;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
