@@ -148,7 +148,8 @@ export const membres = {
     },
     {
       prenom: "Jocelyn",
-      // portrait et style à compléter
+      portrait: "/photos/membres/jocelyn.jpg",
+      // style à compléter
       style: "Portrait à venir",
     },
   ] satisfies Member[],
