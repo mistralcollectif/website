@@ -127,6 +127,44 @@ export const workshops = {
   ],
 };
 
+export type Photo = {
+  src: string;
+  legende: string; // "photographe · lieu"
+  alt: string;
+};
+
+export const galerie = {
+  intro: "La sélection du collectif — argentique et numérique, la ville et le sauvage.",
+  // Ordre du carousel ; lieux à préciser/corriger par le collectif
+  items: [
+    {
+      src: "/photos/0036-rade-de-marseille.jpg",
+      legende: "Hugo · rade de Marseille",
+      alt: "Vue depuis la proue d'un bateau vers un fort insulaire dans la rade de Marseille, noir et blanc argentique",
+    },
+    {
+      src: "/photos/cite-radieuse.jpg",
+      legende: "Hugo · La Cité Radieuse, Marseille",
+      alt: "Toit-terrasse de la Cité Radieuse en noir et blanc, pilier central et collines en arrière-plan",
+    },
+    {
+      src: "/photos/mucem-renault.jpg",
+      legende: "Hugo · Mucem, Marseille",
+      alt: "Anciennes berlines chargées de bagages sur le toit, alignées sur l'esplanade du Mucem, deux passants au premier plan",
+    },
+    {
+      src: "/photos/quai-baigneur.jpg",
+      legende: "Hugo",
+      alt: "Trois personnes de dos sur un quai regardent un enfant entrer dans l'eau, voiliers à l'horizon, noir et blanc argentique",
+    },
+    {
+      src: "/photos/glacier.jpg",
+      legende: "Hugo",
+      alt: "Détail d'un glacier accroché à une paroi rocheuse sombre, noir et blanc contrasté",
+    },
+  ] satisfies Photo[],
+};
+
 export type Member = {
   prenom: string;
   portrait: string; // /photos/membres/prenom.jpg
@@ -140,7 +178,7 @@ export const membres = {
   items: [
     {
       prenom: "Hugo",
-      portrait: "https://picsum.photos/seed/hugo-mistral/400/533", // placeholder — remplacer par /photos/membres/hugo.jpg
+      portrait: "/photos/membres/hugo.jpg",
       style: "Rue et lumière urbaine",
       instagram: "hugo.photo",
     },
@@ -191,6 +229,7 @@ export const footer = {
   nav: [
     { label: "Manifeste", href: "#manifeste" },
     { label: "Expositions", href: "#expositions" },
+    { label: "Galerie", href: "#galerie" },
     { label: "Workshops", href: "#workshops" },
     { label: "Membres", href: "#membres" },
   ],
