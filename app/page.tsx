@@ -175,7 +175,6 @@ export default function Home() {
                 )}
               </div>
               <h3 className="member-name">{member.prenom}</h3>
-              <p className="member-style">{member.style}</p>
               {member.instagram && (
                 <a
                   href={`https://instagram.com/${member.instagram}`}

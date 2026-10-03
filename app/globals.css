@@ -602,11 +602,6 @@ nav.scrolled {
   font-weight: 500;
   margin-top: 4px;
 }
-.member-style {
-  color: var(--text-dim);
-  font-size: 13px;
-  line-height: 1.5;
-}
 .member-instagram {
   color: var(--accent);
   font-size: 13px;

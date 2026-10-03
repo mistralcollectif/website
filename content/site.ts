@@ -144,7 +144,6 @@ export const workshops = {
 export type Member = {
   prenom: string;
   portrait?: string; // /photos/membres/prenom.jpg — absent = placeholder
-  style: string;
   instagram?: string; // handle sans @
 };
 
@@ -155,20 +154,17 @@ export const membres = {
     {
       prenom: "Hugo",
       portrait: "/photos/membres/hugo.jpg",
-      style: "Rue et lumière urbaine",
       instagram: "101_neo",
     },
     {
       prenom: "David",
       portrait: "/photos/membres/david.jpg",
-      style: "Argentique et portraits",
       instagram: "davidperiers",
     },
     {
       prenom: "Jocelyn",
       portrait: "/photos/membres/jocelyn.jpg",
-      // style à compléter
-      style: "Portrait à venir",
+      instagram: "jocelynroos",
     },
   ] satisfies Member[],
 };
