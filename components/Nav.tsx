@@ -63,10 +63,7 @@ export default function Nav() {
   return (
     <nav className={scrolled ? "scrolled" : undefined} id="siteNav">
       <a href="#hero" className="logo-mark" aria-label="Collectif Mistral — haut de page">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="20" cy="20" r="14.5" stroke="var(--text)" strokeWidth="1.2" />
-          <circle cx="27" cy="14" r="2" fill="var(--accent)" />
-        </svg>
+        <Image src="/logo.png" alt="" width={40} height={40} />
         <span className="logo-word">Mistral</span>
       </a>
       <div className="nav-links">
@@ -80,24 +77,19 @@ export default function Nav() {
           </a>
         ))}
       </div>
-      <div className="nav-right">
-        <div className="theme-switch" role="group" aria-label="Choisir une direction artistique">
-          {THEMES.map((t) => (
-            <button
-              key={t.id}
-              type="button"
-              className={`theme-dot${theme === t.id ? " active" : ""}`}
-              data-theme={t.id}
-              title={t.label}
-              aria-label={t.label}
-              aria-pressed={theme === t.id}
-              onClick={() => setTheme(t.id)}
-            />
-          ))}
-        </div>
-        <a href="#hero" className="nav-logo" aria-label="Collectif Mistral — haut de page">
-          <Image src="/logo.png" alt="" width={44} height={44} />
-        </a>
+      <div className="theme-switch" role="group" aria-label="Choisir une direction artistique">
+        {THEMES.map((t) => (
+          <button
+            key={t.id}
+            type="button"
+            className={`theme-dot${theme === t.id ? " active" : ""}`}
+            data-theme={t.id}
+            title={t.label}
+            aria-label={t.label}
+            aria-pressed={theme === t.id}
+            onClick={() => setTheme(t.id)}
+          />
+        ))}
       </div>
     </nav>
   );
