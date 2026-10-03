@@ -825,7 +825,7 @@ footer {
   flex-wrap: wrap;
 }
 .carousel-caption {
-  font-family: var(--font-fraunces), "Fraunces", serif;
+  font-family: var(--font-unbounded), "Unbounded", sans-serif;
   font-size: 16px;
   color: var(--text-dim);
 }
@@ -835,7 +835,7 @@ footer {
   gap: 14px;
 }
 .carousel-count {
-  font-family: var(--font-fraunces), "Fraunces", serif;
+  font-family: var(--font-unbounded), "Unbounded", sans-serif;
   font-size: 13px;
   color: var(--text-faint);
   letter-spacing: 0.08em;
