@@ -104,21 +104,30 @@ export default function Home() {
           <h2 className="reveal">Expositions</h2>
           <p className="reveal">{expositions.intro}</p>
         </div>
-        <div className="expo-grid">
-          {expositions.items.map((expo) => (
-            <div key={expo.title} className="expo-card reveal">
-              <Image
-                src={expo.image}
-                alt={expo.alt}
-                fill
-                sizes="(max-width: 860px) 100vw, 33vw"
-              />
-              <div className="expo-overlay">
-                <span className="expo-tag">{expo.tag}</span>
-                <h3>{expo.title}</h3>
-                <p>{expo.meta}</p>
-              </div>
-            </div>
+        <div className="formats">
+          {expositions.formats.map((f) => (
+            <article key={f.num} className="format reveal">
+              <span className="num">{f.num}</span>
+              <span className="format-kind">{f.kind}</span>
+              <h3>{f.name}</h3>
+              <p className="format-principe">{f.principe}</p>
+              <dl>
+                <dt>Pour qui</dt>
+                <dd>{f.pour}</dd>
+                <dt>Prochainement</dt>
+                <dd className={f.statut.upcoming ? "upcoming" : undefined}>{f.statut.label}</dd>
+              </dl>
+              {f.cta && (
+                <a
+                  href={f.cta.href}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {f.cta.label}
+                </a>
+              )}
+            </article>
           ))}
         </div>
       </section>

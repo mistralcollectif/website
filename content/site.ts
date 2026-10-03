@@ -66,34 +66,52 @@ export const manifeste = {
   ],
 };
 
-export type Expo = {
-  tag: string;
-  title: string;
-  meta: string;
-  // Placeholder picsum en attendant la Selecta — remplacer par /photos/…
-  image: string;
-  alt: string;
+export type ExpoFormat = {
+  num: string;
+  kind: string; // "Exposition collective"
+  name: string;
+  principe: string;
+  pour: string;
+  statut: { label: string; upcoming: boolean };
+  cta?: { label: string; href: string };
 };
 
+// Sources : Notion > Expos (Expo #1 Grand Angle, Expo #2 Carte Blanche) + Manifeste.
+// Thème et lieu de Grand Angle #1 ne sont PAS arrêtés : ne rien annoncer ici
+// tant que le collectif n'a pas tranché.
 export const expositions = {
   intro:
-    "Entre membres et en participation libre, nos expositions donnent à voir la diversité des regards marseillais.",
-  items: [
+    "On montre des photos sur des murs, ensemble. Deux formats : Grand Angle, une exposition collective autour d'un thème commun, et Carte Blanche, l'exposition personnelle d'un membre. Des appels à projets ouvrent les murs aux autres photographes de la ville.",
+  formats: [
     {
-      tag: "À venir — Décembre 2026",
-      title: "Grand Angle #1",
-      meta: "Thème : regard sur la Méditerranée · Vertigo ou Jeanne Barret, Marseille",
-      image: "https://picsum.photos/seed/mistral01/700/900",
-      alt: "Exposition Grand Angle #1 — photo à venir",
+      num: "01",
+      kind: "Exposition collective",
+      name: "Grand Angle",
+      principe:
+        "Un thème commun, beaucoup de regards différents. Chaque photographe l'interprète à sa manière (rue, paysage, portrait, abstrait) et les images s'accrochent ensemble sur les mêmes murs.",
+      pour: "Les membres, des artistes invités et des photographes de la ville, y compris ceux qu'on ne connaît pas encore.",
+      statut: { label: "Prochaine édition : décembre 2026, Marseille. Thème à annoncer.", upcoming: true },
     },
     {
-      tag: "Appel ouvert",
-      title: "Appel à projets",
-      meta: "Photographes marseillais, proposez une série · candidatures via Instagram",
-      image: "https://picsum.photos/seed/mistral03/700/900",
-      alt: "Appel à projets du Collectif Mistral — photo à venir",
+      num: "02",
+      kind: "Exposition personnelle",
+      name: "Carte Blanche",
+      principe:
+        "Pas de thème imposé. Un membre du collectif présente une série personnelle et travaillée, celle de son choix.",
+      pour: "Les membres du collectif.",
+      statut: { label: "Date à annoncer.", upcoming: false },
     },
-  ] satisfies Expo[],
+    {
+      num: "03",
+      kind: "Ouvert à tous les photographes marseillais",
+      name: "Appel à projets",
+      principe:
+        "Pour accrocher tes images dans un Grand Angle sans être membre. L'appel est lancé sur Instagram et précise le thème, les dates et la façon de candidater.",
+      pour: "Tous les photographes marseillais, débutants ou confirmés, en argentique comme en numérique.",
+      statut: { label: "Les appels sont annoncés sur Instagram.", upcoming: false },
+      cta: { label: "Suivre les appels →", href: site.instagram },
+    },
+  ] satisfies ExpoFormat[],
 };
 
 export const workshops = {

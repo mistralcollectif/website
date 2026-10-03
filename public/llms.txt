@@ -12,10 +12,15 @@ Site one-page en français : https://mistral-collectif.vercel.app
 - Manifeste (#manifeste) : pourquoi le collectif existe — rassembler les
   photographes marseillais qui ne se croisent jamais, partager ce qui vient
   après la prise de vue.
-- Expositions (#expositions) : expositions « Grand Angle » (thème commun,
-  participation ouverte aux photographes marseillais) et « Cartes Blanches »
-  (séries personnelles des membres). Grand Angle #1 prévue en décembre 2026 à
-  Marseille (Vertigo ou Jeanne Barret).
+- Expositions (#expositions) : trois formats.
+  - Grand Angle : exposition collective autour d'un thème commun, chaque
+    photographe l'interprète à sa manière. Prochaine édition en décembre 2026
+    à Marseille (thème et lieu à annoncer).
+  - Carte Blanche : exposition personnelle, sans thème imposé, un membre
+    présente une série de son choix.
+  - Appel à projets : ouvert aux photographes marseillais (membres ou non) pour
+    participer à un Grand Angle ; annoncé sur Instagram avec thème, dates et
+    modalités.
 - Workshops (#workshops) : photo walks, revues de portfolio, argentique &
   labo, post-traitement.
 - Membres (#membres) : les photographes du collectif.

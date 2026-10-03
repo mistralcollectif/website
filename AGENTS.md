@@ -21,14 +21,13 @@ npm run lint
 
 - One-pager complet recodé depuis le brief Notion ("Brief .md" + "HTML skeleton",
   page Website du workspace Mistral Collectif) : Hero, Manifeste (texte réel v3),
-  Expositions (vraies infos Grand Angle #1/#2), Workshops, Rejoindre, Footer.
+  Expositions (principe : Grand Angle collectif à thème, Carte Blanche perso, appel à projets), Workshops, Rejoindre, Footer.
 - Système de 3 thèmes (Noir Mistral / Lumière du Sud par défaut / Bleu
   Méditerranée) via variables CSS + `localStorage("cm-theme")`, typo
   Unbounded (titres) + Inter, animations reveal au scroll.
 - Tout le contenu éditorial vit dans `content/site.ts` — modifier là,
   jamais dans les composants.
-- Photos : placeholders picsum en attendant la Selecta (vraies photos →
-  `public/photos/<page>/`, puis retirer le remotePattern picsum de `next.config.ts`).
+- Photos : toutes locales dans `public/photos/<page>/` (plus aucun placeholder distant).
 - Formulaire de contact : mailto (pas de backend) — à brancher plus tard.
 - Déployé sur Vercel : https://mistral-collectif.vercel.app (auto-deploy depuis `main`)
 - Repo GitHub `mistralcollectif/website`.
@@ -40,3 +39,5 @@ npm run lint
   de thème de `app/globals.css`.
 - La section "Identité visuelle" du brief est volontairement exclue du site
   public (matériau interne).
+- Thème et lieu de Grand Angle #1 (décembre 2026) ne sont pas arrêtés : ne rien
+  annoncer sur le site avant décision du collectif (idées dans Notion > Expos).
