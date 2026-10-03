@@ -81,7 +81,7 @@ export const fr: Copy = {
         principe:
           "Un thème commun, beaucoup de regards différents. Chaque photographe l'interprète à sa manière (rue, paysage, portrait, abstrait) et les images s'accrochent ensemble sur les mêmes murs.",
         pour: "Les membres, des artistes invités et des photographes de la ville, y compris ceux qu'on ne connaît pas encore.",
-        statut: { label: "Prochaine édition : décembre 2026, Marseille. Thème à annoncer.", upcoming: true },
+        statut: { label: "Première édition, thème « Mare Nostrum ». Date et lieu à définir.", upcoming: true },
       },
       {
         num: "02",

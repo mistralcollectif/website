@@ -81,7 +81,7 @@ export const en: Copy = {
         principe:
           "One shared theme, many different eyes. Each photographer reads it their own way (street, landscape, portrait, abstract) and the images hang together on the same walls.",
         pour: "Members, guest artists and photographers from the city, including ones we don't know yet.",
-        statut: { label: "Next edition: December 2026, Marseille. Theme to be announced.", upcoming: true },
+        statut: { label: "First edition, theme “Mare Nostrum”. Date and venue to be announced.", upcoming: true },
       },
       {
         num: "02",
