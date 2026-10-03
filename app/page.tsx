@@ -2,7 +2,6 @@ import Image from "next/image";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import Nav from "@/components/Nav";
 import RevealObserver from "@/components/RevealObserver";
-import ContactForm from "@/components/ContactForm";
 import Carousel from "@/components/Carousel";
 import {
   site,
@@ -16,9 +15,33 @@ import {
   footer,
 } from "@/content/site";
 
+// Données structurées pour moteurs de recherche et agents IA
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.name,
+  url: site.url,
+  email: site.email,
+  description:
+    "Association de photographes à Marseille : expositions Grand Angle et Cartes Blanches, workshops (photo walks, revues de portfolio, argentique, post-traitement), communauté ouverte aux photographes marseillais.",
+  sameAs: [site.instagram],
+  location: {
+    "@type": "Place",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Marseille",
+      addressCountry: "FR",
+    },
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <RevealObserver />
       <Nav />
 
@@ -139,13 +162,19 @@ export default function Home() {
           {membres.items.map((member) => (
             <div key={member.prenom} className="member-card reveal">
               <div className="member-portrait">
-                <Image
-                  src={member.portrait}
-                  alt={`Portrait de ${member.prenom}, photographe du Collectif Mistral`}
-                  fill
-                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                  style={{ objectFit: "cover" }}
-                />
+                {member.portrait ? (
+                  <Image
+                    src={member.portrait}
+                    alt={`Portrait de ${member.prenom}, photographe du Collectif Mistral`}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                ) : (
+                  <div className="member-placeholder" aria-hidden="true">
+                    {member.prenom.charAt(0)}
+                  </div>
+                )}
               </div>
               <h3 className="member-name">{member.prenom}</h3>
               <p className="member-style">{member.style}</p>
@@ -190,7 +219,27 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <ContactForm />
+          <div className="contact-box reveal">
+            <span className="eyebrow">Contact</span>
+            <h3>Parler à quelqu'un du collectif</h3>
+            <p>
+              Le plus direct : écrivez-nous sur Instagram, on répond vite. Sinon,
+              un mail arrive au même endroit.
+            </p>
+            <div className="contact-actions">
+              <a
+                href={site.instagramDM}
+                className="btn primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nous écrire sur Instagram
+              </a>
+              <a href={`mailto:${site.email}`} className="btn">
+                {site.email}
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

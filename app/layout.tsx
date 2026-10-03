@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Un vent nouveau souffle sur la photographie marseillaise. Collectif de photographes réunissant des artistes, organisant expositions et workshops autour de la lumière du Sud.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Collectif Mistral — Photographes à Marseille",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title: "Collectif Mistral — Photographes à Marseille",
     description:
       "Un vent nouveau souffle sur la photographie marseillaise. Collectif de photographes à Marseille.",
-    images: ["/og-image.png"],
+    images: ["/og-image.jpg"],
   },
   alternates: {
     canonical: "https://mistral-collectif.vercel.app",

@@ -7,7 +7,8 @@ export const site = {
   email: "mistralcollectif@gmail.com",
   instagram: "https://www.instagram.com/mistral.collectif",
   instagramHandle: "@mistral.collectif",
-  formspreeEndpoint: "https://formspree.io/f/XXXXXXX", // Public endpoint, pas de secret
+  instagramDM: "https://ig.me/m/mistral.collectif", // conversation directe
+  url: "https://mistral-collectif.vercel.app",
 };
 
 export const hero = {
@@ -166,7 +167,7 @@ export const galerie = {
 
 export type Member = {
   prenom: string;
-  portrait: string; // /photos/membres/prenom.jpg
+  portrait?: string; // /photos/membres/prenom.jpg — absent = placeholder
   style: string;
   instagram?: string; // handle sans @
 };
@@ -188,16 +189,9 @@ export const membres = {
       instagram: "david.analog",
     },
     {
-      prenom: "Marie",
-      portrait: "https://picsum.photos/seed/marie-mistral/400/533",
-      style: "Paysages méditerranéens",
-      instagram: "marie.mediterranee",
-    },
-    {
-      prenom: "Lucas",
-      portrait: "https://picsum.photos/seed/lucas-mistral/400/533",
-      style: "Architecture et géométrie",
-      instagram: "lucas.frames",
+      prenom: "Jocelyn",
+      // portrait et style à compléter
+      style: "Portrait à venir",
     },
   ] satisfies Member[],
 };

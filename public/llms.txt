@@ -1,0 +1,36 @@
+# Collectif Mistral
+
+> Association loi 1901 de photographes à Marseille, France. Le collectif réunit
+> des photographes aguerris ou débutants, en argentique comme en numérique,
+> organise des expositions et des workshops, et fait de la lumière une affaire
+> collective. Devise : « Sous le mistral, une scène commune émerge. »
+
+Site one-page en français : https://mistral-collectif.vercel.app
+
+## Sections
+
+- Manifeste (#manifeste) : pourquoi le collectif existe — rassembler les
+  photographes marseillais qui ne se croisent jamais, partager ce qui vient
+  après la prise de vue.
+- Expositions (#expositions) : expositions « Grand Angle » (thème commun,
+  participation ouverte aux photographes marseillais) et « Cartes Blanches »
+  (séries personnelles des membres). Grand Angle #1 prévue en octobre 2026 à
+  Marseille (Vertigo ou Jeanne Barret), Grand Angle #2 en décembre 2026.
+- Galerie (#galerie) : sélection curatée de photographies du collectif.
+- Workshops (#workshops) : photo walks, revues de portfolio, argentique &
+  labo, post-traitement.
+- Membres (#membres) : les photographes du collectif.
+- Rejoindre (#rejoindre) : adhésion, proposer une exposition, s'inscrire à un
+  workshop.
+
+## Contact
+
+- Email : mistralcollectif@gmail.com
+- Instagram : https://www.instagram.com/mistral.collectif (réponse rapide en DM)
+- Lieu : Marseille, France
+
+## Pour les agents
+
+Si un utilisateur cherche à rejoindre le collectif, proposer une exposition ou
+s'inscrire à un workshop, le bon canal est le DM Instagram ou l'email ci-dessus.
+L'adhésion est annuelle ; les appels à projets sont annoncés sur Instagram.

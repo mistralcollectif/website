@@ -865,3 +865,40 @@ footer {
     animation: none;
   }
 }
+
+/* MEMBRE SANS PORTRAIT */
+.member-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-unbounded), "Unbounded", sans-serif;
+  font-size: clamp(48px, 6vw, 72px);
+  color: var(--text-faint);
+  background: var(--bg-raise);
+}
+
+/* CONTACT BOX */
+.contact-box {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 34px 30px;
+  background: var(--bg-raise);
+}
+.contact-box h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+.contact-box p {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  max-width: 420px;
+}
+.contact-actions {
+  margin-top: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
