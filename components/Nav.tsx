@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const THEMES = [
@@ -79,19 +80,24 @@ export default function Nav() {
           </a>
         ))}
       </div>
-      <div className="theme-switch" role="group" aria-label="Choisir une direction artistique">
-        {THEMES.map((t) => (
-          <button
-            key={t.id}
-            type="button"
-            className={`theme-dot${theme === t.id ? " active" : ""}`}
-            data-theme={t.id}
-            title={t.label}
-            aria-label={t.label}
-            aria-pressed={theme === t.id}
-            onClick={() => setTheme(t.id)}
-          />
-        ))}
+      <div className="nav-right">
+        <div className="theme-switch" role="group" aria-label="Choisir une direction artistique">
+          {THEMES.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              className={`theme-dot${theme === t.id ? " active" : ""}`}
+              data-theme={t.id}
+              title={t.label}
+              aria-label={t.label}
+              aria-pressed={theme === t.id}
+              onClick={() => setTheme(t.id)}
+            />
+          ))}
+        </div>
+        <a href="#hero" className="nav-logo" aria-label="Collectif Mistral — haut de page">
+          <Image src="/logo.png" alt="" width={44} height={44} />
+        </a>
       </div>
     </nav>
   );
