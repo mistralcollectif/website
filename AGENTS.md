@@ -24,7 +24,7 @@ npm run lint
   Expositions (vraies infos Grand Angle #1/#2), Workshops, Rejoindre, Footer.
 - Système de 3 thèmes (Noir Mistral / Lumière du Sud par défaut / Bleu
   Méditerranée) via variables CSS + `localStorage("cm-theme")`, typo
-  Fraunces + Inter, animations reveal au scroll.
+  Unbounded (titres) + Inter, animations reveal au scroll.
 - Tout le contenu éditorial vit dans `content/site.ts` — modifier là,
   jamais dans les composants.
 - Photos : placeholders picsum en attendant la Selecta (vraies photos →

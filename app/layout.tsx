@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Unbounded } from "next/font/google";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -76,7 +75,7 @@ export default function RootLayout({
       lang="fr"
       data-theme="lumiere"
       suppressHydrationWarning
-      className={`${fraunces.variable} ${inter.variable}`}
+      className={`${unbounded.variable} ${inter.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
