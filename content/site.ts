@@ -51,18 +51,13 @@ export const manifeste = {
   pillars: [
     {
       num: "01",
-      title: "Communauté",
-      text: "Des photographes marseillais, aguerris ou débutants, qui marchent ensemble, relisent leurs portfolios et étalent les images sur la table pour garder celles qui tiennent.",
+      title: "Expositions",
+      text: "Grand Angle réunit, autour d'un thème commun, les photographes de la ville, connus ou non. Cartes Blanches laisse à chaque membre un mur pour sa propre série.",
     },
     {
       num: "02",
-      title: "Expositions",
-      text: "Des expositions Grand Angle qui mettent en lumière les photographes anonymes de la ville autour d'un thème commun, et des Cartes Blanches où les membres présentent leurs séries personnelles.",
-    },
-    {
-      num: "03",
       title: "Workshops",
-      text: "Des ateliers pratiques — photo walks, revues de portfolio, argentique, post-traitement — animés par des membres et des invités.",
+      text: "Marches photo, revues de portfolio, argentique, post-traitement. Des ateliers pratiques animés par des membres et des invités.",
     },
   ],
 };
@@ -123,21 +118,25 @@ export const workshops = {
       idx: "01",
       title: "Photo walks",
       text: "Sorties terrain dans les quartiers de Marseille, retour collectif sur les images produites.",
+      when: "Prochainement", // date à renseigner une fois fixée
     },
     {
       idx: "02",
       title: "Revue de portfolio",
       text: "On étale les images sur la table, on garde celles qui tiennent, on construit des séries qui racontent.",
+      when: "Prochainement", // date à renseigner une fois fixée
     },
     {
       idx: "03",
       title: "Argentique & labo",
       text: "Initiation à la prise de vue argentique et au développement en laboratoire noir & blanc.",
+      when: "Prochainement", // date à renseigner une fois fixée
     },
     {
       idx: "04",
       title: "Post-traitement",
       text: "Retouche et étalonnage pour construire une identité visuelle cohérente sur une série.",
+      when: "Prochainement", // date à renseigner une fois fixée
     },
   ],
 };
@@ -199,5 +198,5 @@ export const footer = {
     { label: "Workshops", href: "#workshops" },
     { label: "Membres", href: "#membres" },
   ],
-  copyright: `© ${new Date().getFullYear()} Collectif Mistral — tous droits réservés`,
+  copyright: `© ${new Date().getFullYear()} Collectif Mistral. Tous droits réservés`,
 };

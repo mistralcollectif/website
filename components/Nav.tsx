@@ -61,7 +61,7 @@ export default function Nav() {
 
   return (
     <nav className={scrolled ? "scrolled" : undefined} id="siteNav">
-      <a href="#hero" className="logo-mark" aria-label="Collectif Mistral — haut de page">
+      <a href="#hero" className="logo-mark" aria-label="Collectif Mistral, haut de page">
         <Image src="/logo.png" alt="" width={40} height={40} />
         <span className="logo-word">Mistral</span>
       </a>

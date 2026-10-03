@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mistral-collectif.vercel.app"),
-  title: "Collectif Mistral — Photographes à Marseille",
+  title: "Collectif Mistral, photographes à Marseille",
   description:
     "Un vent nouveau souffle sur la photographie marseillaise. Collectif de photographes réunissant des artistes, organisant expositions et workshops autour de la lumière du Sud.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: "https://mistral-collectif.vercel.app",
     siteName: "Collectif Mistral",
-    title: "Collectif Mistral — Photographes à Marseille",
+    title: "Collectif Mistral, photographes à Marseille",
     description:
       "Un vent nouveau souffle sur la photographie marseillaise. Collectif de photographes réunissant des artistes, organisant expositions et workshops autour de la lumière du Sud.",
     images: [
@@ -45,13 +45,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Collectif Mistral — Photographes à Marseille",
+        alt: "Collectif Mistral, photographes à Marseille",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Collectif Mistral — Photographes à Marseille",
+    title: "Collectif Mistral, photographes à Marseille",
     description:
       "Un vent nouveau souffle sur la photographie marseillaise. Collectif de photographes à Marseille.",
     images: ["/og-image.jpg"],

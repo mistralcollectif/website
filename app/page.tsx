@@ -144,6 +144,7 @@ export default function Home() {
               <span className="idx">{w.idx}</span>
               <h3>{w.title}</h3>
               <p>{w.text}</p>
+              <span className="when">{w.when}</span>
               <span className="arrow">→</span>
             </div>
           ))}
@@ -262,7 +263,7 @@ export default function Home() {
           <div className="footer-col">
             <h4>Suivre</h4>
             <a href={site.instagram} target="_blank" rel="noopener noreferrer">
-              Instagram — {site.instagramHandle}
+              Instagram : {site.instagramHandle}
             </a>
             <a href={`mailto:${site.email}`}>{site.email}</a>
           </div>
