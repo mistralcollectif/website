@@ -42,10 +42,11 @@ export const manifeste = {
     em: "une scène commune",
     after: " émerge.",
   },
-  // Extraits du Manifeste — synthèse (Hugo + David, v3)
+  // Manifeste — version octobre 2026
   paragraphs: [
-    "Photographier, c'est poser un regard : s'arrêter l'espace d'un instant, figer une scène dans le temps, prendre du recul sur le monde pour donner une forme à la vision qu'on en a. L'exercice paraît solitaire ; il devient très vite collectif. On confronte les idées comme les réglages, les lumières comme les cadrages. On apprend en partageant, et on vibre autant devant le travail des autres que derrière son propre viseur.",
-    "Marseille est pleine de photographes, chacun avec son regard et son univers, qui ne se croisent presque jamais. Mistral est né pour changer ça : argentique ou numérique, rue ou calanques, chacun garde sa langue, mais nous regardons dans la même direction — vers la ville et le sauvage, vers le vivant qui tient debout dans le vent.",
+    "Photographier, c'est éveiller son regard. Une image commence bien avant le déclenchement, et finit rarement avec lui. Apprendre à voir ce qui passe inaperçu : un contre-jour, un intervalle entre deux gestes, un silence dans le cadre. Cadrer, c'est décider.",
+    "L'exercice paraît solitaire ; il devient très vite collectif. Un regard se forme au contact d'autres regards : on s'y reconnaît, on s'y oppose, on le déplace.",
+    "Mistral réunit des photographes aux sensibilités et aux pratiques différentes. Ce qui nous relie n'est pas un style, mais une attention : au cadre, à la lumière, au bon moment. On montre, on discute, on expose, jusqu'à ce que chaque série trouve sa forme.",
   ],
   pillars: [
     {
