@@ -506,6 +506,54 @@ nav.scrolled {
   transform: translateX(6px);
 }
 
+/* MEMBRES */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.member-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.member-portrait {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--bg-raise);
+}
+.member-portrait img {
+  transition: transform 0.6s cubic-bezier(0.16, 0.8, 0.3, 1);
+  filter: saturate(0.85) contrast(1.03);
+}
+.member-card:hover .member-portrait img {
+  transform: scale(1.04);
+}
+.member-name {
+  font-family: var(--font-fraunces), "Fraunces", serif;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.member-style {
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.member-instagram {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  transition: opacity 0.25s;
+}
+.member-instagram:hover {
+  opacity: 0.7;
+}
+
 /* REJOINDRE */
 #rejoindre {
   background: var(--bg-alt);

@@ -114,6 +114,44 @@ export const workshops = {
   ],
 };
 
+export type Member = {
+  prenom: string;
+  portrait: string; // /membres/prenom.jpg
+  style: string;
+  instagram?: string; // handle sans @
+};
+
+export const membres = {
+  intro:
+    "Des photographes marseillais qui partagent un regard, des techniques et l'amour de la lumière du Sud.",
+  items: [
+    {
+      prenom: "Hugo",
+      portrait: "https://picsum.photos/seed/hugo-mistral/400/533", // placeholder — remplacer par /membres/hugo.jpg
+      style: "Rue et lumière urbaine",
+      instagram: "hugo.photo",
+    },
+    {
+      prenom: "David",
+      portrait: "https://picsum.photos/seed/david-mistral/400/533",
+      style: "Argentique et portraits",
+      instagram: "david.analog",
+    },
+    {
+      prenom: "Marie",
+      portrait: "https://picsum.photos/seed/marie-mistral/400/533",
+      style: "Paysages méditerranéens",
+      instagram: "marie.mediterranee",
+    },
+    {
+      prenom: "Lucas",
+      portrait: "https://picsum.photos/seed/lucas-mistral/400/533",
+      style: "Architecture et géométrie",
+      instagram: "lucas.frames",
+    },
+  ] satisfies Member[],
+};
+
 export const rejoindre = {
   title: "Rejoindre le Mistral",
   options: [
@@ -141,6 +179,7 @@ export const footer = {
     { label: "Manifeste", href: "#manifeste" },
     { label: "Expositions", href: "#expositions" },
     { label: "Workshops", href: "#workshops" },
+    { label: "Membres", href: "#membres" },
   ],
   copyright: `© ${new Date().getFullYear()} Collectif Mistral — tous droits réservés`,
 };

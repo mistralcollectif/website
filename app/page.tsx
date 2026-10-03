@@ -8,6 +8,7 @@ import {
   manifeste,
   expositions,
   workshops,
+  membres,
   rejoindre,
   footer,
 } from "@/content/site";
@@ -111,6 +112,42 @@ export default function Home() {
               <h3>{w.title}</h3>
               <p>{w.text}</p>
               <span className="arrow">→</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* MEMBRES */}
+      <section id="membres">
+        <div className="section-head">
+          <h2 className="reveal">Les membres</h2>
+          <p className="reveal">{membres.intro}</p>
+        </div>
+        <div className="members-grid">
+          {membres.items.map((member) => (
+            <div key={member.prenom} className="member-card reveal">
+              <div className="member-portrait">
+                <Image
+                  src={member.portrait}
+                  alt={`Portrait de ${member.prenom}, photographe du Collectif Mistral`}
+                  fill
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <h3 className="member-name">{member.prenom}</h3>
+              <p className="member-style">{member.style}</p>
+              {member.instagram && (
+                <a
+                  href={`https://instagram.com/${member.instagram}`}
+                  className="member-instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Instagram de ${member.prenom}`}
+                >
+                  @{member.instagram}
+                </a>
+              )}
             </div>
           ))}
         </div>
