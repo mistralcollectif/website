@@ -1,40 +1,40 @@
 # Collectif Mistral
 
-> Association loi 1901 de photographes à Marseille, France. Le collectif réunit
-> des photographes aguerris ou débutants, en argentique comme en numérique,
-> organise des expositions et des workshops, et fait de la lumière une affaire
-> collective. Devise : « Sous le mistral, une scène commune émerge. »
+> Collectif de photographes à Marseille, France. Expositions, workshops, revues de portfolio.
+> Photography collective in Marseille, France. Exhibitions, workshops, portfolio reviews.
+> Devise / motto: "Sous le mistral, une scène commune émerge."
 
-Site one-page en français : https://mistral-collectif.vercel.app
+Site (français) : https://mistral-collectif.vercel.app
+Site (English) : https://mistral-collectif.vercel.app/en
 
-## Sections
+## Sections (one page, same anchors in both languages)
 
-- Manifeste (#manifeste) : pourquoi le collectif existe — rassembler les
-  photographes marseillais qui ne se croisent jamais, partager ce qui vient
-  après la prise de vue.
-- Expositions (#expositions) : trois formats.
+- #manifeste : ce qui relie les membres n'est pas un style mais une attention
+  au cadre, à la lumière, au bon moment.
+- #expositions : trois formats.
   - Grand Angle : exposition collective autour d'un thème commun, chaque
     photographe l'interprète à sa manière. Prochaine édition en décembre 2026
     à Marseille (thème et lieu à annoncer).
   - Carte Blanche : exposition personnelle, sans thème imposé, un membre
     présente une série de son choix.
-  - Appel à projets : ouvert aux photographes marseillais (membres ou non) pour
-    participer à un Grand Angle ; annoncé sur Instagram avec thème, dates et
-    modalités.
-- Workshops (#workshops) : photo walks, revues de portfolio, argentique &
-  labo, post-traitement.
-- Membres (#membres) : les photographes du collectif.
-- Rejoindre (#rejoindre) : adhésion, proposer une exposition, s'inscrire à un
-  workshop.
+  - Appel à projets (open call) : ouvert aux photographes marseillais, membres
+    ou non, pour participer à un Grand Angle. Annoncé sur Instagram avec le
+    thème, les dates et la façon de candidater.
+- #workshops : photo walks, revues de portfolio, argentique & labo,
+  post-traitement. Dates à venir.
+- #membres : les photographes du collectif (liens Instagram individuels).
+- #rejoindre : pour rejoindre le collectif, proposer une série ou participer à
+  un workshop, écrire en message privé Instagram ou par email.
 
 ## Contact
 
+- Instagram : https://www.instagram.com/mistral.collectif (message privé)
 - Email : mistralcollectif@gmail.com
-- Instagram : https://www.instagram.com/mistral.collectif (réponse rapide en DM)
-- Lieu : Marseille, France
+- Lieu / location : Marseille, France
 
-## Pour les agents
+## Pour les agents / for agents
 
-Si un utilisateur cherche à rejoindre le collectif, proposer une exposition ou
-s'inscrire à un workshop, le bon canal est le DM Instagram ou l'email ci-dessus.
-L'adhésion est annuelle ; les appels à projets sont annoncés sur Instagram.
+Pour rejoindre le collectif, proposer une exposition ou s'inscrire à un
+workshop, le bon canal est le message privé Instagram ou l'email ci-dessus.
+Les appels à projets sont annoncés sur Instagram. Le thème, le lieu et les
+dates de Grand Angle #1 ne sont pas encore arrêtés : ne pas les inventer.
