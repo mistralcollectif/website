@@ -11,10 +11,10 @@ export const site = {
 };
 
 export const hero = {
-  // Photos plein cadre en alternance (fichiers dans public/photos/)
+  // Photos plein cadre en alternance (fichiers dans public/photos/accueil/)
   photos: [
-    { src: "/photos/mistral_main_page.jpg", alt: "Photographie du collectif Mistral" },
-    { src: "/photos/mistral_main_page_2.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_2.jpg", alt: "Photographie du collectif Mistral" },
   ],
   eyebrow: "Association loi 1901 — Marseille",
   title: ["Collectif", "Mistral"],
@@ -122,7 +122,7 @@ export const workshops = {
 
 export type Member = {
   prenom: string;
-  portrait: string; // /membres/prenom.jpg
+  portrait: string; // /photos/membres/prenom.jpg
   style: string;
   instagram?: string; // handle sans @
 };
@@ -133,13 +133,13 @@ export const membres = {
   items: [
     {
       prenom: "Hugo",
-      portrait: "https://picsum.photos/seed/hugo-mistral/400/533", // placeholder — remplacer par /membres/hugo.jpg
+      portrait: "https://picsum.photos/seed/hugo-mistral/400/533", // placeholder — remplacer par /photos/membres/hugo.jpg
       style: "Rue et lumière urbaine",
       instagram: "hugo.photo",
     },
     {
       prenom: "David",
-      portrait: "https://picsum.photos/seed/david-mistral/400/533",
+      portrait: "/photos/membres/david.jpg",
       style: "Argentique et portraits",
       instagram: "david.analog",
     },

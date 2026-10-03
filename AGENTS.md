@@ -28,7 +28,7 @@ npm run lint
 - Tout le contenu éditorial vit dans `content/site.ts` — modifier là,
   jamais dans les composants.
 - Photos : placeholders picsum en attendant la Selecta (vraies photos →
-  `public/photos/`, puis retirer le remotePattern picsum de `next.config.ts`).
+  `public/photos/<page>/`, puis retirer le remotePattern picsum de `next.config.ts`).
 - Formulaire de contact : mailto (pas de backend) — à brancher plus tard.
 - Déployé sur Vercel : https://mistral-collectif.vercel.app (auto-deploy depuis `main`)
 - Repo GitHub `mistralcollectif/website`.
