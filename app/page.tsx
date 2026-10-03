@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HeroSlideshow from "@/components/HeroSlideshow";
 import Nav from "@/components/Nav";
 import RevealObserver from "@/components/RevealObserver";
 import ContactForm from "@/components/ContactForm";
@@ -21,6 +22,7 @@ export default function Home() {
 
       {/* HERO */}
       <section id="hero">
+        <HeroSlideshow photos={hero.photos} />
         <svg className="wind-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
           <path className="w1" d="M-100 200 C 200 150, 400 260, 700 190 S 1100 140, 1300 210" />
           <path className="w2" d="M-100 420 C 250 380, 500 480, 800 400 S 1150 350, 1300 430" />

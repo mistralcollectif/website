@@ -11,6 +11,11 @@ export const site = {
 };
 
 export const hero = {
+  // Photos plein cadre en alternance (fichiers dans public/photos/)
+  photos: [
+    { src: "/photos/mistral_main_page.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/mistral_main_page_2.jpg", alt: "Photographie du collectif Mistral" },
+  ],
   eyebrow: "Association loi 1901 — Marseille",
   title: ["Collectif", "Mistral"],
   tagline:
