@@ -31,7 +31,6 @@ export default function Home() {
           <path className="w3" d="M-100 620 C 300 570, 550 660, 850 590 S 1150 560, 1300 610" />
         </svg>
         <div className="hero-content">
-          <span className="eyebrow reveal in-view">{hero.eyebrow}</span>
           <h1 className="reveal in-view">
             {hero.title[0]}
             <br />

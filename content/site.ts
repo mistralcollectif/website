@@ -23,10 +23,9 @@ export const hero = {
     { src: "/photos/accueil/mistral_main_page_4-5.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_4-6.jpg", alt: "Photographie du collectif Mistral" },
   ],
-  eyebrow: "Association loi 1901 — Marseille",
   title: ["Collectif", "Mistral"],
   tagline:
-    "Un vent nouveau souffle sur la photographie marseillaise. Nous réunissons des photographes, organisons des expositions et des workshops, et faisons de la lumière une affaire collective.",
+    "Collectif de photographes à Marseille. Expositions, workshops, revues de portfolio.",
   ctaPrimary: { label: "Rejoindre le collectif", href: "#rejoindre" },
   ctaSecondary: { label: "Voir les expositions", href: "#expositions" },
 };
