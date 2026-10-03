@@ -7,6 +7,7 @@ export const site = {
   email: "mistralcollectif@gmail.com",
   instagram: "https://www.instagram.com/mistral.collectif",
   instagramHandle: "@mistral.collectif",
+  formspreeEndpoint: "https://formspree.io/f/XXXXXXX", // Public endpoint, pas de secret
 };
 
 export const hero = {

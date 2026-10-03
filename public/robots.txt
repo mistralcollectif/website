@@ -1,0 +1,5 @@
+# Collectif Mistral - Robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://mistral-collectif.vercel.app/sitemap.xml
