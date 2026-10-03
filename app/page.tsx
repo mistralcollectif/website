@@ -2,13 +2,11 @@ import Image from "next/image";
 import HeroSlideshow from "@/components/HeroSlideshow";
 import Nav from "@/components/Nav";
 import RevealObserver from "@/components/RevealObserver";
-import Carousel from "@/components/Carousel";
 import {
   site,
   hero,
   manifeste,
   expositions,
-  galerie,
   workshops,
   membres,
   rejoindre,
@@ -123,15 +121,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
-
-      {/* GALERIE */}
-      <section id="galerie">
-        <div className="section-head">
-          <h2 className="reveal">Galerie</h2>
-          <p className="reveal">{galerie.intro}</p>
-        </div>
-        <Carousel photos={galerie.items} />
       </section>
 
       {/* WORKSHOPS */}

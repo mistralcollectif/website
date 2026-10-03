@@ -9,12 +9,11 @@ const THEMES = [
   { id: "mediterranee", label: "Bleu Méditerranée" },
 ] as const;
 
-const SECTIONS = ["manifeste", "expositions", "galerie", "workshops", "membres", "rejoindre"] as const;
+const SECTIONS = ["manifeste", "expositions", "workshops", "membres", "rejoindre"] as const;
 
 const LINKS = [
   { id: "manifeste", label: "Manifeste" },
   { id: "expositions", label: "Expositions" },
-  { id: "galerie", label: "Galerie" },
   { id: "workshops", label: "Workshops" },
   { id: "membres", label: "Membres" },
   { id: "rejoindre", label: "Rejoindre" },

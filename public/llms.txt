@@ -14,9 +14,8 @@ Site one-page en français : https://mistral-collectif.vercel.app
   après la prise de vue.
 - Expositions (#expositions) : expositions « Grand Angle » (thème commun,
   participation ouverte aux photographes marseillais) et « Cartes Blanches »
-  (séries personnelles des membres). Grand Angle #1 prévue en octobre 2026 à
-  Marseille (Vertigo ou Jeanne Barret), Grand Angle #2 en décembre 2026.
-- Galerie (#galerie) : sélection curatée de photographies du collectif.
+  (séries personnelles des membres). Grand Angle #1 prévue en décembre 2026 à
+  Marseille (Vertigo ou Jeanne Barret).
 - Workshops (#workshops) : photo walks, revues de portfolio, argentique &
   labo, post-traitement.
 - Membres (#membres) : les photographes du collectif.

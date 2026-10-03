@@ -14,12 +14,15 @@ export const site = {
 export const hero = {
   // Photos plein cadre en alternance (fichiers dans public/photos/accueil/)
   photos: [
+    { src: "/photos/accueil/0036-rade-de-marseille.jpg", alt: "Proue d'un bateau pneumatique vers un fort insulaire dans la rade de Marseille, noir et blanc argentique" },
     { src: "/photos/accueil/mistral_main_page.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_2.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_3.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/cite-radieuse.jpg", alt: "Toit-terrasse de la Cité Radieuse à Marseille, pilier central et collines au loin, noir et blanc" },
     { src: "/photos/accueil/mistral_main_page_4.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_4-2.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_4-3.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/glacier.jpg", alt: "Glacier accroché à une paroi rocheuse sombre, noir et blanc contrasté" },
     { src: "/photos/accueil/mistral_main_page_4-4.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_4-5.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_4-6.jpg", alt: "Photographie du collectif Mistral" },
@@ -77,18 +80,11 @@ export const expositions = {
     "Entre membres et en participation libre, nos expositions donnent à voir la diversité des regards marseillais.",
   items: [
     {
-      tag: "À venir — Octobre 2026",
+      tag: "À venir — Décembre 2026",
       title: "Grand Angle #1",
       meta: "Thème : regard sur la Méditerranée · Vertigo ou Jeanne Barret, Marseille",
       image: "https://picsum.photos/seed/mistral01/700/900",
       alt: "Exposition Grand Angle #1 — photo à venir",
-    },
-    {
-      tag: "À venir — Décembre 2026",
-      title: "Grand Angle #2",
-      meta: "Exposition collective · thème et lieu à annoncer",
-      image: "https://picsum.photos/seed/mistral02/700/900",
-      alt: "Exposition Grand Angle #2 — photo à venir",
     },
     {
       tag: "Appel ouvert",
@@ -127,44 +123,6 @@ export const workshops = {
   ],
 };
 
-export type Photo = {
-  src: string;
-  legende: string; // "photographe · lieu"
-  alt: string;
-};
-
-export const galerie = {
-  intro: "La sélection du collectif — argentique et numérique, la ville et le sauvage.",
-  // Ordre du carousel ; lieux à préciser/corriger par le collectif
-  items: [
-    {
-      src: "/photos/0036-rade-de-marseille.jpg",
-      legende: "Hugo · rade de Marseille",
-      alt: "Vue depuis la proue d'un bateau vers un fort insulaire dans la rade de Marseille, noir et blanc argentique",
-    },
-    {
-      src: "/photos/cite-radieuse.jpg",
-      legende: "Hugo · La Cité Radieuse, Marseille",
-      alt: "Toit-terrasse de la Cité Radieuse en noir et blanc, pilier central et collines en arrière-plan",
-    },
-    {
-      src: "/photos/mucem-renault.jpg",
-      legende: "Hugo · Mucem, Marseille",
-      alt: "Anciennes berlines chargées de bagages sur le toit, alignées sur l'esplanade du Mucem, deux passants au premier plan",
-    },
-    {
-      src: "/photos/quai-baigneur.jpg",
-      legende: "Hugo",
-      alt: "Trois personnes de dos sur un quai regardent un enfant entrer dans l'eau, voiliers à l'horizon, noir et blanc argentique",
-    },
-    {
-      src: "/photos/glacier.jpg",
-      legende: "Hugo",
-      alt: "Détail d'un glacier accroché à une paroi rocheuse sombre, noir et blanc contrasté",
-    },
-  ] satisfies Photo[],
-};
-
 export type Member = {
   prenom: string;
   portrait?: string; // /photos/membres/prenom.jpg — absent = placeholder
@@ -180,13 +138,13 @@ export const membres = {
       prenom: "Hugo",
       portrait: "/photos/membres/hugo.jpg",
       style: "Rue et lumière urbaine",
-      instagram: "hugo.photo",
+      instagram: "101_neo",
     },
     {
       prenom: "David",
       portrait: "/photos/membres/david.jpg",
       style: "Argentique et portraits",
-      instagram: "david.analog",
+      instagram: "davidperiers",
     },
     {
       prenom: "Jocelyn",
@@ -222,7 +180,6 @@ export const footer = {
   nav: [
     { label: "Manifeste", href: "#manifeste" },
     { label: "Expositions", href: "#expositions" },
-    { label: "Galerie", href: "#galerie" },
     { label: "Workshops", href: "#workshops" },
     { label: "Membres", href: "#membres" },
   ],
