@@ -1,25 +1,30 @@
 import type { Metadata } from "next";
-import { Archivo, Inter } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Mistral Collectif — collectif photo à Marseille",
-  description: "Collectif photo basé à Marseille, argentique et numérique, sur invitation",
+  title: "Collectif Mistral — Photographes à Marseille",
+  description:
+    "Collectif Mistral, association de photographes à Marseille. Expositions, workshops, communauté.",
 };
+
+// Applique le thème mémorisé avant le premier rendu (évite le flash)
+const themeInit = `try{var t=localStorage.getItem("cm-theme");if(t==="mistral"||t==="lumiere"||t==="mediterranee"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}`;
 
 export default function RootLayout({
   children,
@@ -29,9 +34,14 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${archivo.variable} ${inter.variable} h-full antialiased`}
+      data-theme="lumiere"
+      suppressHydrationWarning
+      className={`${fraunces.variable} ${inter.variable}`}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInit }} />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

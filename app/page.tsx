@@ -1,81 +1,181 @@
+import Image from "next/image";
+import Nav from "@/components/Nav";
+import RevealObserver from "@/components/RevealObserver";
+import ContactForm from "@/components/ContactForm";
+import {
+  site,
+  hero,
+  manifeste,
+  expositions,
+  workshops,
+  rejoindre,
+  footer,
+} from "@/content/site";
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-cream text-ink">
-      {/* Hero Section */}
-      <section className="px-6 md:px-12 lg:px-16 pt-24 pb-32">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 lg:col-span-10 lg:col-start-2">
-              <h1
-                className="font-display font-black uppercase tracking-tighter leading-none mb-8"
-                style={{ fontSize: 'clamp(3rem, 8vw, 8rem)' }}
-              >
-                Mistral
-                <br />
-                Collectif
-              </h1>
-              <p className="font-sans text-lg md:text-xl max-w-2xl leading-relaxed">
-                Collectif photo basé à Marseille, argentique et numérique, sur invitation.
-              </p>
-            </div>
+    <>
+      <RevealObserver />
+      <Nav />
+
+      {/* HERO */}
+      <section id="hero">
+        <svg className="wind-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+          <path className="w1" d="M-100 200 C 200 150, 400 260, 700 190 S 1100 140, 1300 210" />
+          <path className="w2" d="M-100 420 C 250 380, 500 480, 800 400 S 1150 350, 1300 430" />
+          <path className="w3" d="M-100 620 C 300 570, 550 660, 850 590 S 1150 560, 1300 610" />
+        </svg>
+        <div className="hero-content">
+          <span className="eyebrow reveal in-view">{hero.eyebrow}</span>
+          <h1 className="reveal in-view">
+            {hero.title[0]}
+            <br />
+            {hero.title[1]}
+          </h1>
+          <p className="hero-tagline reveal in-view">{hero.tagline}</p>
+          <div className="hero-cta reveal in-view">
+            <a href={hero.ctaPrimary.href} className="btn primary">
+              {hero.ctaPrimary.label}
+            </a>
+            <a href={hero.ctaSecondary.href} className="btn">
+              {hero.ctaSecondary.label}
+            </a>
           </div>
+        </div>
+        <div className="scroll-cue">
+          <span className="line"></span> Scroll
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="px-6 md:px-12 lg:px-16 py-20 bg-cream">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4">
-              <h2 className="font-display font-bold text-4xl md:text-5xl uppercase tracking-tight mb-6">
-                À propos
-              </h2>
-              <div className="space-y-4 text-base md:text-lg leading-relaxed">
-                <p>
-                  Mistral Collectif réunit des photographes passionnés à Marseille,
-                  travaillant en argentique et numérique.
-                </p>
-                <p>
-                  Un espace d'échange et de création, fonctionnant sur invitation,
-                  où se croisent regards contemporains et techniques traditionnelles.
-                </p>
+      {/* MANIFESTE */}
+      <section id="manifeste">
+        <span className="eyebrow reveal">{manifeste.eyebrow}</span>
+        <p className="manifesto-quote reveal">
+          {manifeste.quote.before}
+          <em>{manifeste.quote.em}</em>
+          {manifeste.quote.after}
+        </p>
+        <div className="manifesto-body">
+          {manifeste.paragraphs.map((p, i) => (
+            <p key={i} className="reveal">
+              {p}
+            </p>
+          ))}
+        </div>
+        <div className="pillars">
+          {manifeste.pillars.map((pillar) => (
+            <div key={pillar.num} className="pillar reveal">
+              <span className="num">{pillar.num}</span>
+              <h3>{pillar.title}</h3>
+              <p>{pillar.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* EXPOSITIONS */}
+      <section id="expositions">
+        <div className="section-head">
+          <h2 className="reveal">Expositions</h2>
+          <p className="reveal">{expositions.intro}</p>
+        </div>
+        <div className="expo-grid">
+          {expositions.items.map((expo) => (
+            <div key={expo.title} className="expo-card reveal">
+              <Image
+                src={expo.image}
+                alt={expo.alt}
+                fill
+                sizes="(max-width: 860px) 100vw, 33vw"
+              />
+              <div className="expo-overlay">
+                <span className="expo-tag">{expo.tag}</span>
+                <h3>{expo.title}</h3>
+                <p>{expo.meta}</p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="px-6 md:px-12 lg:px-16 py-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4">
-              <h2 className="font-display font-bold text-4xl md:text-5xl uppercase tracking-tight mb-6">
-                Contact
-              </h2>
-              <a
-                href="mailto:contact@mistralcollectif.fr"
-                className="inline-block text-mediterranee hover:underline text-lg md:text-xl font-medium transition-all"
-              >
-                contact@mistralcollectif.fr
+      {/* WORKSHOPS */}
+      <section id="workshops">
+        <div className="section-head">
+          <h2 className="reveal">Workshops</h2>
+          <p className="reveal">{workshops.intro}</p>
+        </div>
+        <div className="workshop-list">
+          {workshops.items.map((w) => (
+            <div key={w.idx} className="workshop-row reveal">
+              <span className="idx">{w.idx}</span>
+              <h3>{w.title}</h3>
+              <p>{w.text}</p>
+              <span className="arrow">→</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* REJOINDRE */}
+      <section id="rejoindre">
+        <div className="section-head">
+          <h2 className="reveal">{rejoindre.title}</h2>
+        </div>
+        <div className="join-grid">
+          <div className="join-options">
+            {rejoindre.options.map((option) => (
+              <div key={option.title} className="join-option reveal">
+                <div>
+                  <h3>{option.title}</h3>
+                  <p>{option.text}</p>
+                </div>
+                <a
+                  href={option.cta.href}
+                  className="btn"
+                  {...(option.cta.href.startsWith("http")
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
+                >
+                  {option.cta.label}
+                </a>
+              </div>
+            ))}
+          </div>
+          <ContactForm />
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer>
+        <div className="footer-top">
+          <div className="footer-col">
+            <h4>{site.name}</h4>
+            <p>
+              {footer.identity[0]}
+              <br />
+              {footer.identity[1]}
+            </p>
+          </div>
+          <div className="footer-col">
+            <h4>Navigation</h4>
+            {footer.nav.map((link) => (
+              <a key={link.href} href={link.href}>
+                {link.label}
               </a>
-            </div>
+            ))}
+          </div>
+          <div className="footer-col">
+            <h4>Suivre</h4>
+            <a href={site.instagram} target="_blank" rel="noopener noreferrer">
+              Instagram — {site.instagramHandle}
+            </a>
+            <a href={`mailto:${site.email}`}>{site.email}</a>
           </div>
         </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="px-6 md:px-12 lg:px-16 py-12 border-t border-ink/10">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-12 gap-6">
-            <div className="col-span-12 md:col-span-8 md:col-start-3 lg:col-span-6 lg:col-start-4">
-              <p className="text-sm text-ink/60">
-                © {new Date().getFullYear()} Mistral Collectif — Marseille
-              </p>
-            </div>
-          </div>
+        <div className="footer-bottom">
+          <span>{footer.copyright}</span>
         </div>
       </footer>
-    </div>
+    </>
   );
 }
