@@ -2,9 +2,17 @@ import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const languages = { fr: site.url, en: `${site.url}/en` };
-  return [
-    { url: site.url, lastModified: new Date(), changeFrequency: "weekly", priority: 1, alternates: { languages } },
-    { url: `${site.url}/en`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8, alternates: { languages } },
+  const pages = [
+    { fr: site.url, en: `${site.url}/en`, priority: 1 },
+    { fr: `${site.url}/mentions-legales`, en: `${site.url}/en/legal`, priority: 0.3 },
   ];
+  return pages.flatMap(({ fr, en, priority }) =>
+    [fr, en].map((url) => ({
+      url,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: url === en ? priority * 0.8 : priority,
+      alternates: { languages: { fr, en } },
+    }))
+  );
 }

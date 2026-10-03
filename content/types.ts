@@ -11,9 +11,17 @@ export type ExpoFormat = {
   cta?: { label: string };
 };
 
+export type LegalSection = { title: string; paragraphs: string[] };
+
 export type Copy = {
   lang: Lang;
   ogLocale: string;
+  routes: {
+    home: string;
+    legal: string;
+    altHome: string;
+    altLegal: string;
+  };
   meta: {
     title: string;
     description: string;
@@ -23,21 +31,29 @@ export type Copy = {
   nav: {
     homeLabel: string;
     links: { id: string; label: string }[];
-    themeGroupLabel: string;
-    themes: { mistral: string; lumiere: string };
-    langGroupLabel: string;
+    skip: string;
+    menuOpen: string;
+    menuClose: string;
+    menuLabel: string;
+    instagramLabel: string;
+    langSwitchLabel: string;
+    altLangCode: string;
+    themeToDark: string;
+    themeToLight: string;
   };
   hero: {
     title: [string, string];
     tagline: string;
     ctaPrimary: { label: string; href: string };
     ctaSecondary: { label: string; href: string };
+    pauseLabel: string;
+    playLabel: string;
   };
   manifeste: {
     eyebrow: string;
     quote: { before: string; em: string; after: string };
     paragraphs: string[];
-    pillars: { num: string; title: string; text: string }[];
+    pillars: { num: string; title: string; text: string; href: string }[];
   };
   expositions: {
     title: string;
@@ -61,9 +77,35 @@ export type Copy = {
     title: string;
     intro: string;
     instagramCta: string;
+    form: {
+      firstName: string;
+      lastName: string;
+      email: string;
+      message: string;
+      submit: string;
+      sending: string;
+      successTitle: string;
+      successText: string;
+      errorText: string;
+      privacyBefore: string;
+      privacyLink: string;
+      privacyAfter: string;
+    };
   };
   footer: {
     navLabel: string;
-    instagramLabel: string;
+    legalLabel: string;
+  };
+  legal: {
+    title: string;
+    updated: string;
+    backHome: string;
+    sections: LegalSection[];
+    formParagraph: string;
+  };
+  notFound: {
+    title: string;
+    text: string;
+    home: string;
   };
 };

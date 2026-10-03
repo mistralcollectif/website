@@ -13,8 +13,8 @@ Site (English) : https://mistral-collectif.vercel.app/en
   au cadre, à la lumière, au bon moment.
 - #expositions : trois formats.
   - Grand Angle : exposition collective autour d'un thème commun, chaque
-    photographe l'interprète à sa manière. Prochaine édition en décembre 2026
-    à Marseille (thème et lieu à annoncer).
+    photographe l'interprète à sa manière. Première édition en décembre 2026
+    à Marseille, thème « Mare Nostrum » (lieu à définir).
   - Carte Blanche : exposition personnelle, sans thème imposé, un membre
     présente une série de son choix.
   - Appel à projets (open call) : ouvert aux photographes marseillais, membres
@@ -24,7 +24,7 @@ Site (English) : https://mistral-collectif.vercel.app/en
   post-traitement. Dates à venir.
 - #membres : les photographes du collectif (liens Instagram individuels).
 - #rejoindre : pour rejoindre le collectif, proposer une série ou participer à
-  un workshop, écrire en message privé Instagram ou par email.
+  un workshop, écrire via Instagram ou par email.
 
 ## Contact
 
@@ -36,5 +36,9 @@ Site (English) : https://mistral-collectif.vercel.app/en
 
 Pour rejoindre le collectif, proposer une exposition ou s'inscrire à un
 workshop, le bon canal est le message privé Instagram ou l'email ci-dessus.
-Les appels à projets sont annoncés sur Instagram. Le thème, le lieu et les
-dates de Grand Angle #1 ne sont pas encore arrêtés : ne pas les inventer.
+Les appels à projets sont annoncés sur Instagram. Le lieu et la date exacte de
+la première édition de Grand Angle ne sont pas encore arrêtés : ne pas les
+inventer.
+
+Mentions légales et confidentialité : https://mistral-collectif.vercel.app/mentions-legales
+(English: https://mistral-collectif.vercel.app/en/legal)

@@ -16,9 +16,10 @@ const inter = Inter({
   display: "swap",
 });
 
-// Applique le thème mémorisé avant le premier rendu (évite le flash).
-// Toute valeur inconnue (ancien thème supprimé compris) retombe sur "lumiere".
-const themeInit = `try{var t=localStorage.getItem("cm-theme");if(t==="mistral"||t==="lumiere"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}`;
+// Posé avant le premier rendu : classe "js" (les animations d'apparition ne
+// cachent le contenu que si le JavaScript tourne) et thème mémorisé (évite le
+// flash). Toute valeur inconnue (ancien thème supprimé compris) retombe sur "lumiere".
+const themeInit = `try{document.documentElement.classList.add("js")}catch(e){}try{var t=localStorage.getItem("cm-theme");if(t==="mistral"||t==="lumiere"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}`;
 
 export default function RootShell({
   lang,

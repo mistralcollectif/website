@@ -1,10 +1,14 @@
 import type { Copy } from "./types";
 
-// Theme and venue of Grand Angle #1 are NOT decided: announce nothing here
-// until the collective has chosen (ideas in Notion > Expos).
 export const en: Copy = {
   lang: "en",
   ogLocale: "en_US",
+  routes: {
+    home: "/en",
+    legal: "/en/legal",
+    altHome: "/",
+    altLegal: "/mentions-legales",
+  },
   meta: {
     title: "Collectif Mistral, photographers in Marseille",
     description:
@@ -31,15 +35,23 @@ export const en: Copy = {
       { id: "membres", label: "Members" },
       { id: "rejoindre", label: "Join" },
     ],
-    themeGroupLabel: "Choose the site's look",
-    themes: { mistral: "Mistral Dark", lumiere: "Southern Light" },
-    langGroupLabel: "Language",
+    skip: "Skip to content",
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
+    menuLabel: "Main menu",
+    instagramLabel: "The collective on Instagram",
+    langSwitchLabel: "Voir le site en français",
+    altLangCode: "FR",
+    themeToDark: "Switch to dark theme",
+    themeToLight: "Switch to light theme",
   },
   hero: {
     title: ["Collectif", "Mistral"],
     tagline: "A photography collective in Marseille. Exhibitions, workshops, portfolio reviews.",
     ctaPrimary: { label: "Join the collective", href: "#rejoindre" },
     ctaSecondary: { label: "See the exhibitions", href: "#expositions" },
+    pauseLabel: "Pause slideshow",
+    playLabel: "Play slideshow",
   },
   manifeste: {
     eyebrow: "Our manifesto",
@@ -58,11 +70,13 @@ export const en: Copy = {
         num: "01",
         title: "Exhibitions",
         text: "Grand Angle brings together the city's photographers, known or not, around a shared theme. Carte Blanche gives each member a wall for their own series.",
+        href: "#expositions",
       },
       {
         num: "02",
         title: "Workshops",
         text: "Photo walks, portfolio reviews, film photography, post-processing. Hands-on sessions led by members and guests.",
+        href: "#workshops",
       },
     ],
   },
@@ -81,7 +95,7 @@ export const en: Copy = {
         principe:
           "One shared theme, many different eyes. Each photographer reads it their own way (street, landscape, portrait, abstract) and the images hang together on the same walls.",
         pour: "Members, guest artists and photographers from the city, including ones we don't know yet.",
-        statut: { label: "First edition, theme “Mare Nostrum”. Date and venue to be announced.", upcoming: true },
+        statut: { label: "First edition in December, theme “Mare Nostrum”. Venue to be announced.", upcoming: true },
       },
       {
         num: "02",
@@ -147,11 +161,70 @@ export const en: Copy = {
   rejoindre: {
     title: "Join Mistral",
     intro:
-      "To join the collective, propose a series or take part in a workshop, the most direct way is to write to us.",
-    instagramCta: "Message us on Instagram",
+      "To join the collective, propose a series or take part in a workshop, write to us.",
+    instagramCta: "Our Instagram page",
+    form: {
+      firstName: "First name",
+      lastName: "Last name",
+      email: "Email",
+      message: "Message",
+      submit: "Send",
+      sending: "Sending",
+      successTitle: "Message sent",
+      successText: "Thank you, we will get back to you soon.",
+      errorText: "The message could not be sent. Please write to us directly at",
+      privacyBefore: "Your details are used only to reply to you. ",
+      privacyLink: "Legal notice",
+      privacyAfter: ".",
+    },
   },
   footer: {
     navLabel: "Navigation",
-    instagramLabel: "Instagram",
+    legalLabel: "Legal notice",
+  },
+  legal: {
+    title: "Legal notice and privacy",
+    updated: "Last updated: 3 October 2026",
+    backHome: "Back to home",
+    sections: [
+      {
+        title: "Publisher",
+        paragraphs: [
+          "Collectif Mistral, a photography collective based in Marseille, France. The collective is not, at this time, a registered association.",
+          "The site is published on a non-professional, non-profit basis. In accordance with article 6, III, 2 of French law no. 2004-575 of 21 June 2004 (LCEN), the publisher has chosen to remain anonymous and has provided their details to the host.",
+          "Contact: mistralcollectif@gmail.com",
+        ],
+      },
+      {
+        title: "Host",
+        paragraphs: ["Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States. Website: vercel.com"],
+      },
+      {
+        title: "Intellectual property",
+        paragraphs: [
+          "The photographs on this site belong to their authors. Any reproduction or reuse without their written permission is prohibited.",
+          "The texts and the design of the site belong to the collective.",
+          "If you are the author, or one of the people shown in a photograph, and want it removed, write to us: we handle removal requests as quickly as we can.",
+        ],
+      },
+      {
+        title: "Personal data",
+        paragraphs: [
+          "This site sets no cookies, uses no analytics or advertising tools and embeds no third-party content. Fonts are hosted with the site.",
+          "Your browser keeps only your light or dark theme choice, on your own device. That information is never sent to us.",
+          "Like any host, Vercel records technical logs (IP address, date, requested page) to run and secure the site. See Vercel's privacy policy.",
+          "If you write to us by email or Instagram message, we use your information only to reply. Instagram is a Meta service, governed by its own privacy policy.",
+          "Your messages are not kept longer than needed to handle your request, unless you join the collective.",
+          "You have the right to access, correct, erase and object to the use of your data. To exercise it, write to mistralcollectif@gmail.com. You may also lodge a complaint with the CNIL (cnil.fr).",
+        ],
+      },
+    ],
+    formParagraph:
+      "If you use the contact form, your first name, last name, email address and message are sent by email to the collective, through the Resend sending service, so we can reply. They are not stored on the site.",
+  },
+  notFound: {
+    title: "Page not found",
+    text: "This page does not exist or has moved.",
+    home: "Back to home",
   },
 };
