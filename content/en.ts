@@ -61,7 +61,7 @@ export const en: Copy = {
       after: " emerges.",
     },
     paragraphs: [
-      "To photograph is to awaken your eye. An image starts well before the shutter, and rarely ends with it. Learning to see what goes unnoticed, then choosing what you keep in the frame and what you leave out of it.",
+      "To photograph is to awaken your eye. An image starts well before the shutter, and rarely ends with it. Learning to see what goes unnoticed, to choose what you keep in the frame and what you leave out of it, and to know when to press the shutter and when to hold back.",
       "It looks like a solitary exercise, but it quickly becomes a collective one. A way of seeing is shaped by other ways of seeing: you recognise yourself in it, you push against it, you move it.",
       "Mistral brings together photographers with different sensibilities and practices. What connects us is not a style but a kind of attention: to the frame, to the light, to the right moment. We show, we talk, we exhibit, until each series finds its form.",
     ],

@@ -61,7 +61,7 @@ export const fr: Copy = {
       after: " émerge.",
     },
     paragraphs: [
-      "Photographier, c'est éveiller son regard. Une image commence bien avant le déclenchement, et finit rarement avec lui. Apprendre à voir ce qui passe inaperçu, puis choisir ce qu'on garde dans le cadre et ce qu'on laisse hors-champ.",
+      "Photographier, c'est éveiller son regard. Une image commence bien avant le déclenchement, et finit rarement avec lui. Apprendre à voir ce qui passe inaperçu, choisir ce qu'on garde dans le cadre et ce qu'on laisse hors-champ, savoir quand déclencher et quand s'en abstenir.",
       "L'exercice paraît solitaire ; il devient très vite collectif. Un regard se forme au contact d'autres regards : on s'y reconnaît, on s'y oppose, on le déplace.",
       "Mistral réunit des photographes aux sensibilités et aux pratiques différentes. Ce qui nous relie n'est pas un style, mais une attention : au cadre, à la lumière, au bon moment. On montre, on discute, on expose, jusqu'à ce que chaque série trouve sa forme.",
     ],
