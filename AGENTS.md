@@ -30,7 +30,8 @@ npm run lint
 - Photos : placeholders picsum en attendant la Selecta (vraies photos →
   `public/photos/`, puis retirer le remotePattern picsum de `next.config.ts`).
 - Formulaire de contact : mailto (pas de backend) — à brancher plus tard.
-- Pas encore déployé sur Vercel ; repo GitHub `mistralcollectif/website`.
+- Déployé sur Vercel : https://mistral-collectif.vercel.app (auto-deploy depuis `main`)
+- Repo GitHub `mistralcollectif/website`.
 
 ## Règles
 
