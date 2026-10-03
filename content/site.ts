@@ -15,6 +15,13 @@ export const hero = {
   photos: [
     { src: "/photos/accueil/mistral_main_page.jpg", alt: "Photographie du collectif Mistral" },
     { src: "/photos/accueil/mistral_main_page_2.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_3.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4-2.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4-3.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4-4.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4-5.jpg", alt: "Photographie du collectif Mistral" },
+    { src: "/photos/accueil/mistral_main_page_4-6.jpg", alt: "Photographie du collectif Mistral" },
   ],
   eyebrow: "Association loi 1901 — Marseille",
   title: ["Collectif", "Mistral"],
