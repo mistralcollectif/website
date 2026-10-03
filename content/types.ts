@@ -72,6 +72,7 @@ export type Copy = {
     intro: string;
     portraitAlt: (prenom: string) => string;
     instagramLabel: (prenom: string) => string;
+    portfolioLabel: (prenom: string) => string;
   };
   rejoindre: {
     title: string;

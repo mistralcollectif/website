@@ -186,17 +186,40 @@ export default function HomePage({ lang }: { lang: Lang }) {
                   )}
                 </div>
                 <h3 className="member-name">{member.prenom}</h3>
-                {member.instagram && (
-                  <a
-                    href={`https://instagram.com/${member.instagram}`}
-                    className="member-instagram"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={t.membres.instagramLabel(member.prenom)}
-                  >
-                    @{member.instagram}
-                  </a>
-                )}
+                <div className="member-links">
+                  {member.instagram && (
+                    <a
+                      href={`https://instagram.com/${member.instagram}`}
+                      className="member-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={t.membres.instagramLabel(member.prenom)}
+                      title={`@${member.instagram}`}
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" />
+                      </svg>
+                    </a>
+                  )}
+                  {member.portfolio && (
+                    <a
+                      href={member.portfolio}
+                      className="member-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={t.membres.portfolioLabel(member.prenom)}
+                      title={member.portfolio.replace(/^https?:\/\/|\/$/g, "")}
+                    >
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M3 12h18" />
+                        <path d="M12 3c2.6 2.6 3.9 5.6 3.9 9s-1.3 6.4-3.9 9c-2.6-2.6-3.9-5.6-3.9-9S9.4 5.6 12 3z" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
               </div>
             ))}
           </div>

@@ -54,10 +54,11 @@ export type Member = {
   prenom: string;
   portrait?: string; // /photos/membres/prenom.jpg, absent = placeholder
   instagram?: string; // handle sans @
+  portfolio?: string; // URL complète du portfolio
 };
 
 export const membres: Member[] = [
-  { prenom: "Hugo", portrait: "/photos/membres/hugo.jpg", instagram: "101_neo" },
-  { prenom: "David", portrait: "/photos/membres/david.jpg", instagram: "davidperiers" },
+  { prenom: "Hugo", portrait: "/photos/membres/hugo.jpg", instagram: "101_neo", portfolio: "https://hugoboure.myportfolio.com/" },
+  { prenom: "David", portrait: "/photos/membres/david.jpg", instagram: "davidperiers", portfolio: "https://davidperiers.com/" },
   { prenom: "Jocelyn", portrait: "/photos/membres/jocelyn.jpg", instagram: "jocelynroos" },
 ];

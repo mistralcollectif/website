@@ -157,6 +157,7 @@ export const en: Copy = {
       "Marseille photographers who share a way of seeing, techniques and a love of the southern light.",
     portraitAlt: (prenom) => `Portrait of ${prenom}, photographer with Collectif Mistral`,
     instagramLabel: (prenom) => `${prenom} on Instagram`,
+    portfolioLabel: (prenom) => `${prenom}'s portfolio`,
   },
   rejoindre: {
     title: "Join Mistral",
