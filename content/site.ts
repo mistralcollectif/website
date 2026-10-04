@@ -8,7 +8,7 @@ export const site = {
   instagram: "https://www.instagram.com/mistral.collectif",
   instagramHandle: "@mistral.collectif",
   instagramDM: "https://ig.me/m/mistral.collectif",
-  url: "https://mistral-collectif.vercel.app",
+  url: "https://mistralcollectif.com",
 };
 
 // Photos plein cadre du slideshow (fichiers dans public/photos/accueil/)

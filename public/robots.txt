@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mistral-collectif.vercel.app/sitemap.xml
+Sitemap: https://mistralcollectif.com/sitemap.xml

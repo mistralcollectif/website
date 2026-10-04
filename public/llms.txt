@@ -4,8 +4,8 @@
 > Photography collective in Marseille, France. Exhibitions, workshops, portfolio reviews.
 > Devise / motto: "Sous le mistral, une scène commune émerge."
 
-Site (français) : https://mistral-collectif.vercel.app
-Site (English) : https://mistral-collectif.vercel.app/en
+Site (français) : https://mistralcollectif.com
+Site (English) : https://mistralcollectif.com/en
 
 ## Sections (one page, same anchors in both languages)
 
@@ -40,5 +40,5 @@ Les appels à projets sont annoncés sur Instagram. Le lieu et la date exacte de
 la première édition de Grand Angle ne sont pas encore arrêtés : ne pas les
 inventer.
 
-Mentions légales et confidentialité : https://mistral-collectif.vercel.app/mentions-legales
-(English: https://mistral-collectif.vercel.app/en/legal)
+Mentions légales et confidentialité : https://mistralcollectif.com/mentions-legales
+(English: https://mistralcollectif.com/en/legal)

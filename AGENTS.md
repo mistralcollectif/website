@@ -47,11 +47,18 @@ npm run lint
   Pour ajouter une photo, la redimensionner d'abord (`sharp` est dans
   node_modules via Next).
 - En-têtes de sécurité simples dans `next.config.ts`.
-- Déployé sur Vercel (compte du collectif) : https://mistral-collectif.vercel.app,
-  auto-deploy depuis `main`. Repo GitHub `mistralcollectif/website`.
-- Domaine mistralcollectif.com : à acheter dans Vercel, puis mettre à jour
-  `site.url` dans `content/site.ts` (sitemap, canonical, hreflang, JSON-LD
-  en dépendent) et `public/robots.txt`, `public/llms.txt`.
+- Déployé sur Vercel (équipe « Mistral Collectif », projet `mistral-collectif`) :
+  https://mistralcollectif.com (adresse principale ; `www` et les anciennes
+  adresses `*.vercel.app` redirigent vers elle), auto-deploy depuis `main`.
+  Repo GitHub `mistralcollectif/website`.
+- Un second projet Vercel `website` (créé le 30 août) est relié au même dépôt et
+  déploie le même site sans domaine. C'est un doublon : le supprimer ou le
+  déconnecter quand le collectif le décide.
+- Domaine mistralcollectif.com : acheté chez Vercel le 4 octobre 2026 (renouvellement
+  automatique, environ 11 $ par an). L'adresse est dans `site.url`
+  (`content/site.ts`) : canonical, hreflang, sitemap, JSON-LD et images de
+  partage en dépendent. `public/robots.txt` et `public/llms.txt` la répètent à
+  la main.
 
 ## Règles
 
