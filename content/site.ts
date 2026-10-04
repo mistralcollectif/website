@@ -60,5 +60,5 @@ export type Member = {
 export const membres: Member[] = [
   { prenom: "Hugo", portrait: "/photos/membres/hugo.jpg", instagram: "101_neo", portfolio: "https://hugoboure.myportfolio.com/" },
   { prenom: "David", portrait: "/photos/membres/david.jpg", instagram: "davidperiers", portfolio: "https://davidperiers.com/" },
-  { prenom: "Jocelyn", portrait: "/photos/membres/jocelyn.jpg", instagram: "jocelynroos" },
+  { prenom: "Jocelyn", portrait: "/photos/membres/jocelyn.jpg", instagram: "jocelynroos", portfolio: "https://roosjocelyn.myportfolio.com/" },
 ];
