@@ -11,6 +11,10 @@ export const site = {
   url: "https://mistralcollectif.com",
 };
 
+// Date ISO (AAAA-MM-JJ) à mettre à jour quand le contenu public change.
+// Sert au lastModified du sitemap (évite new Date() à chaque build).
+export const contentLastModified = "2026-10-05";
+
 // Photos plein cadre du slideshow (fichiers dans public/photos/accueil/)
 export const heroPhotos = [
   {

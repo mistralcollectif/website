@@ -5,6 +5,7 @@ import RevealObserver from "@/components/RevealObserver";
 import FormatArt from "@/components/FormatArt";
 import ContactForm from "@/components/ContactForm";
 import SiteFooter from "@/components/SiteFooter";
+import TrackedLink from "@/components/TrackedLink";
 import { getCopy } from "@/content";
 import type { Lang } from "@/content/types";
 import { site, heroPhotos, membres } from "@/content/site";
@@ -128,14 +129,15 @@ export default function HomePage({ lang }: { lang: Lang }) {
                   <dd className={f.statut.upcoming ? "upcoming" : undefined}>{f.statut.label}</dd>
                 </dl>
                 {f.cta && (
-                  <a
+                  <TrackedLink
                     href={site.instagram}
                     className="btn"
                     target="_blank"
                     rel="noopener noreferrer"
+                    event="appel_a_projets_click"
                   >
                     {f.cta.label}
-                  </a>
+                  </TrackedLink>
                 )}
               </article>
             ))}
@@ -234,18 +236,24 @@ export default function HomePage({ lang }: { lang: Lang }) {
                 <p className="reveal">{t.rejoindre.intro}</p>
               </div>
               <div className="contact-actions reveal">
-                <a
+                <TrackedLink
                   href={site.instagram}
                   className="btn primary"
                   target="_blank"
                   rel="noopener noreferrer"
+                  event="instagram_click"
+                  eventData={{ source: "rejoindre" }}
                 >
                   {t.rejoindre.instagramCta}
-                </a>
+                </TrackedLink>
                 {!contactFormEnabled && (
-                  <a href={`mailto:${site.email}`} className="btn">
+                  <TrackedLink
+                    href={`mailto:${site.email}`}
+                    className="btn"
+                    event="email_click"
+                  >
                     {site.email}
-                  </a>
+                  </TrackedLink>
                 )}
               </div>
             </div>

@@ -211,7 +211,7 @@ export const fr: Copy = {
       {
         title: "Données personnelles",
         paragraphs: [
-          "Ce site ne dépose aucun cookie, n'utilise aucun outil de mesure d'audience ni de publicité et n'intègre aucun contenu de tiers. Les polices de caractères sont hébergées avec le site.",
+          "Ce site utilise Vercel Web Analytics, un outil de mesure d'audience sans cookies et sans identification des visiteurs. Il recueille des données anonymes (pages vues, pays approximatif, type d'appareil) et des événements agrégés (clics sur Instagram, l'email, l'appel à projets et le changement de langue). Aucun cookie n'est déposé, aucune publicité n'est intégrée. Les polices de caractères sont hébergées avec le site.",
           "Votre navigateur conserve uniquement, sur votre appareil, votre choix de thème clair ou sombre. Cette information ne nous est jamais transmise.",
           "Comme tout hébergeur, Vercel enregistre des journaux techniques (adresse IP, date, page demandée) pour assurer le fonctionnement et la sécurité du site. Voir la politique de confidentialité de Vercel.",
           "Si vous nous écrivez par email ou par message Instagram, nous utilisons vos informations uniquement pour vous répondre. Instagram est un service de Meta, soumis à sa propre politique de confidentialité.",
