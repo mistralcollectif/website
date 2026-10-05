@@ -211,7 +211,7 @@ export const en: Copy = {
       {
         title: "Personal data",
         paragraphs: [
-          "This site sets no cookies, uses no analytics or advertising tools and embeds no third-party content. Fonts are hosted with the site.",
+          "This site uses Vercel Web Analytics, a cookieless audience measurement tool that does not identify visitors. It collects anonymized data (page views, approximate country, device type) and aggregated events (clicks on Instagram, email, the open call, and the language switch). No cookies are set and no advertising is embedded. Fonts are hosted with the site.",
           "Your browser keeps only your light or dark theme choice, on your own device. That information is never sent to us.",
           "Like any host, Vercel records technical logs (IP address, date, requested page) to run and secure the site. See Vercel's privacy policy.",
           "If you write to us by email or Instagram message, we use your information only to reply. Instagram is a Meta service, governed by its own privacy policy.",

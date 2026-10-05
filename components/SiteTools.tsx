@@ -1,6 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
+import { track } from "@vercel/analytics";
 import type { Copy } from "@/content/types";
 import { InstagramIcon, MoonIcon, SunIcon } from "@/components/Icons";
 
@@ -34,9 +35,14 @@ export default function SiteTools({ nav, instagramUrl, altLangHref }: Props) {
 
   // Change de langue en restant sur la même section
   const switchLang = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    track("lang_switch", { to: nav.altLangCode });
     if (e.metaKey || e.ctrlKey || e.shiftKey) return;
     e.preventDefault();
     window.location.assign(altLangHref + window.location.hash);
+  };
+
+  const trackInstagram = () => {
+    track("instagram_click", { source: "tools" });
   };
 
   return (
@@ -47,6 +53,7 @@ export default function SiteTools({ nav, instagramUrl, altLangHref }: Props) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={nav.instagramLabel}
+        onClick={trackInstagram}
       >
         <InstagramIcon />
       </a>

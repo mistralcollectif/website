@@ -1,5 +1,6 @@
 import { Inter, Unbounded } from "next/font/google";
 import "../app/globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import type { Lang } from "@/content/types";
 
 const unbounded = Unbounded({
@@ -38,7 +39,7 @@ export default function RootShell({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInit }} />
       </head>
-      <body>{children}</body>
+      <body>{children}<Analytics /></body>
     </html>
   );
 }
